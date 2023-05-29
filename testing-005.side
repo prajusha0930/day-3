@@ -1,0 +1,70 @@
+{
+  "id": "3354a3b1-ed2e-44d5-8343-3aef4832b85f",
+  "version": "2.0",
+  "name": "testing",
+  "url": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb ",
+  "tests": [{
+    "id": "16e389cf-d2e6-4b59-8e5a-bdf11637ec9b",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "133d7510-91e8-4e9e-88a1-0697554cebeb",
+    "name": "TC-005",
+    "commands": [{
+      "id": "4a2e057e-b446-464c-a501-34818fb94c2a",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfcdd0a7-9bad-4815-88e4-5dad24023b30",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8901cee3-790b-4563-8c4e-12700039aa79",
+      "comment": "",
+      "command": "click",
+      "target": "css=main",
+      "targets": [
+        ["css=main", "css:finder"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "407af95b-32db-4660-9b91-edbcc1f486bf",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=input-amount",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "f70d9fa2-34dd-4c5b-8b64-54ebf3a4ceb9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-check-label:nth-child(1)",
+      "targets": [],
+      "value": "I understand that gift certificates are non-refundable"
+    }, {
+      "id": "e4ce4614-e0e8-4914-9a99-911b0c15ac10",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9f987e4b-6621-40ef-9017-d602b405f9ca",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["16e389cf-d2e6-4b59-8e5a-bdf11637ec9b"]
+  }],
+  "urls": ["https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb"],
+  "plugins": []
+}
